@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="sdk\Plane.cpp">
+      <Filter>SDK\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Quaternion.cpp">
+      <Filter>SDK\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\CVector2.cpp">
+      <Filter>SDK\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\CVector3.cpp">
+      <Filter>SDK\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{a7d41232-faa1-4fc7-b81c-befc7a001548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Maths">
+      <UniqueIdentifier>{377ad667-e382-4ec2-a622-e4ade624dc33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\API">
+      <UniqueIdentifier>{1920e303-d750-412f-acc4-605008eaa395}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk\Structs.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Plane.h">
+      <Filter>SDK\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Quaternion.h">
+      <Filter>SDK\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CMaths.h">
+      <Filter>SDK\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CVector2.h">
+      <Filter>SDK\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CVector3.h">
+      <Filter>SDK\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CVector4.h">
+      <Filter>SDK\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Checkpoint.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\NPC.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Object.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Player.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Vehicle.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Blip.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Pickup.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\api.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Entity.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GrandM.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GUI.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Ped.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Transform.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Weapon.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIBlip.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APICamera.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APICef.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APICheckpoint.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIEntity.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APILog.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APINpc.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIObject.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIPickup.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIPlayer.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIServer.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIVehicle.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIVisual.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\API\APIWorld.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
