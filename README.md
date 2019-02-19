@@ -1,6 +1,6 @@
 Grand Multiplayer SDK!
 ===================
-
+**Warning! : This is the unstable branch for the upcoming 1.0 update and may have issues or instability.**
 
 This is the C++ SDK for GrandM.
 
