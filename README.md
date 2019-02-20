@@ -8,7 +8,7 @@ This is the C SDK for GrandM.
 
 > **Note:**
 
-> The C++ SDK is meant for experienced programmers who know what they are doing.
+> The C SDK is meant for experienced programmers who know what they are doing.
 
 
 ----------
