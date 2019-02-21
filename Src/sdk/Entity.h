@@ -1,17 +1,20 @@
 #ifndef __ENTITY_H__
 #define __ENTITY_H__
 
-enum EntityType
+namespace GrandM
 {
-	Nill = -1,
-	Player,
-	NPC,
-	Vehicle,
-	Object,
-	Checkpoint,
-	Pickup,
-	Blip,
-};
+	enum EntityType
+	{
+		Nill = -1,
+		Player,
+		NPC,
+		Vehicle,
+		Object,
+		Checkpoint,
+		Pickup,
+		Blip,
+	};
+}
 
 namespace Objects
 {
@@ -19,13 +22,13 @@ namespace Objects
 	{
 	protected:
 		int	entityId = -1;
-		EntityType type = EntityType::Nill;
+		GrandM::EntityType type = GrandM::EntityType::Nill;
 
 	public:
 		void SetID(const int i) { entityId = i; }
 		const int GetID() { return entityId; }
-		void SetType(const EntityType t) { type = t; }
-		const EntityType GetType() { return type; }
+		void SetType(const GrandM::EntityType t) { type = t; }
+		const GrandM::EntityType GetType() { return type; }
 
 		Entity() {}
 		~Entity() {}

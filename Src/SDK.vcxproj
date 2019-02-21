@@ -168,6 +168,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="sdk\API\APIBlip.cpp" />
+    <ClCompile Include="sdk\API\APICamera.cpp" />
+    <ClCompile Include="sdk\API\APICheckpoint.cpp" />
+    <ClCompile Include="sdk\API\APINpc.cpp" />
+    <ClCompile Include="sdk\API\APIObject.cpp" />
+    <ClCompile Include="sdk\API\APIPickup.cpp" />
+    <ClCompile Include="sdk\API\APIVehicle.cpp" />
     <ClCompile Include="sdk\CVector2.cpp" />
     <ClCompile Include="sdk\CVector3.cpp" />
     <ClCompile Include="sdk\Plane.cpp" />

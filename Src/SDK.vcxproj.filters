@@ -14,6 +14,27 @@
       <Filter>SDK\Maths</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="sdk\API\APIVehicle.cpp">
+      <Filter>SDK\API</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\API\APIPickup.cpp">
+      <Filter>SDK\API</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\API\APIObject.cpp">
+      <Filter>SDK\API</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\API\APINpc.cpp">
+      <Filter>SDK\API</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\API\APICheckpoint.cpp">
+      <Filter>SDK\API</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\API\APICamera.cpp">
+      <Filter>SDK\API</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\API\APIBlip.cpp">
+      <Filter>SDK\API</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="SDK">

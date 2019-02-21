@@ -1,17 +1,6 @@
 #ifndef __APIENTITY_H__
 #define __APIENTITY_H__
-
-//enum EntityType
-//{
-//	Nill = -1,
-//	Player,
-//	NPC,
-//	Vehicle,
-//	Object,
-//	Checkpoint,
-//	Pickup,
-//	Blip,
-//};
+#pragma once
 
 namespace API
 {
