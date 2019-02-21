@@ -51,13 +51,13 @@ extern "C" DLL_PUBLIC void API_OnEntityExitCheckpoint(Objects::Entity checkpoint
 }
 
 // When a player sends a command
-extern "C" DLL_PUBLIC void API_OnPlayerCommand(Objects::Entity entity, const std::string message)
+extern "C" DLL_PUBLIC void API_OnPlayerCommand(Objects::Entity entity, const wchar_t * message)
 {
 	
 }
 
 // When a player sends a message
-extern "C" DLL_PUBLIC void API_OnPlayerMessage(Objects::Entity entity, const std::string message)
+extern "C" DLL_PUBLIC void API_OnPlayerMessage(Objects::Entity entity, const wchar_t * message)
 {
 	
 }
@@ -69,19 +69,19 @@ extern "C" DLL_PUBLIC void API_OnCefFinishLoad(Objects::Entity entity)
 }
 
 // When a CEF page sends data
-extern "C" DLL_PUBLIC void API_OnCefSendData(Objects::Entity entity, const std::string data)
+extern "C" DLL_PUBLIC void API_OnCefSendData(Objects::Entity entity, const char * data)
 {
 	
 }
 
 // Called whern a player has just shot
-extern "C" DLL_PUBLIC void API_OnPlayerShot(Objects::Entity entity, const std::string weapon)
+extern "C" DLL_PUBLIC void API_OnPlayerShot(Objects::Entity entity, const char * weapon)
 {
 	
 }
 
 // Called when a entity has just taken damage
-extern "C" DLL_PUBLIC const bool API_OnEntityDamage(Objects::Entity entity, const int damage, Objects::Entity attacker, const std::string weapon)
+extern "C" DLL_PUBLIC const bool API_OnEntityDamage(Objects::Entity entity, const int damage, Objects::Entity attacker, const char * weapon)
 {
 	
 	// Return True to allow server to handle and sync the damage
@@ -90,7 +90,7 @@ extern "C" DLL_PUBLIC const bool API_OnEntityDamage(Objects::Entity entity, cons
 }
 
 // Called after a player has shot and their projectile hits something
-extern "C" DLL_PUBLIC void API_OnProjectileImpact(Objects::Entity player, const std::string weapon, CVector3 position, Objects::Entity entity, const int bone)
+extern "C" DLL_PUBLIC void API_OnProjectileImpact(Objects::Entity player, const char * weapon, CVector3 position, Objects::Entity entity, const int bone)
 {
 
 }

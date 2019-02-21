@@ -186,7 +186,7 @@ public:
 		return API::Vehicle::GetOccupant(*this, seat);
 	}
 
-	const Objects::Entity * GetOccupants()
+	Objects::Entity * GetOccupants()
 	{
 		return API::Vehicle::GetOccupants(*this);
 	}

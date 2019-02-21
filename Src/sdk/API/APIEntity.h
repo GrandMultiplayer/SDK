@@ -139,7 +139,7 @@ namespace API
 		/// </summary>
 		/// <param name="type">The type of entity you want the list of.</param>
 		/// <returns name="entities">A vector holding the id's of the tpye of entities fetched (Types are, Player = 0, Vehicle = 1, Object = 2, NPC = 3, Checkpoint = 4).</returns>
-		DLL_PUBLIC_I_C const Objects::Entity * GetEntities(const int type);
+		DLL_PUBLIC_I_C Objects::Entity * GetEntities(const int type);
 
 		/// <summary>
 		/// Gets the nametag of the entity
