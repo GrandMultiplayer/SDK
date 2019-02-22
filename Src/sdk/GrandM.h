@@ -22,6 +22,7 @@
 #include "Entity.h"
 
 // API Function Imports
+#include "API/APIJoaat.h"
 #include "API/APIEntity.h"
 #include "API/APIBlip.h"
 #include "API/APICef.h"
