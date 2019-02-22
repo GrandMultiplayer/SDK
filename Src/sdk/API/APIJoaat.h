@@ -7,10 +7,7 @@
 
 namespace API
 {
-	namespace API_Joaat
-	{
-		DLL_PUBLIC_I_C uint32_t Jooat(const char * string);
-	}
+	DLL_PUBLIC_I_C uint32_t Jooat(const char * string);
 }
 
 #endif // !__API_JOAAT_H__
