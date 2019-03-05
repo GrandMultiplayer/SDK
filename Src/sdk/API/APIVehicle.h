@@ -1,6 +1,7 @@
 #ifndef __APIVEHICLE_H__
 #define __APIVEHICLE_H__
 #pragma once
+#include <stdint.h>
 
 #include "../api.h"
 #include "../CVector3.h"
@@ -8,8 +9,7 @@
 #include "../Entity.h"
 
 #ifdef __cplusplus
-	DLL_PUBLIC_I_C Objects::Entity CreateVehicle(const char* model, const CVector3 position, const float heading);
-	DLL_PUBLIC_I_C Objects::Entity CreateVehicle_(const char* model, const CVector3 position, const CVector3 rotation);
+	DLL_PUBLIC_I_C Objects::Entity CreateVehicle(const uint32_t model, const CVector3 position, const CVector3 rotation);
 #endif
 
 namespace API
@@ -21,25 +21,12 @@ namespace API
 		/// </summary>
 		/// <param name="model">The model of the vehicle you wish to create</param>
 		/// <param name="position">The position you wish to create the vehicle at</param>
-		/// <param name="heading">The direction you wish the vehicle to be facing</param>
-		/// <returns name="entity">The vehicles server entity id</returns>
-#ifdef __cplusplus
-		Objects::Entity Create(const char* model, const CVector3 position, const float heading);
-#else
-		DLL_PUBLIC_I_C Objects::Entity CreateVehicle(const char* model, const CVector3 position, const float heading);
-#endif
-
-		/// <summary>
-		/// Creates a vehicle of a desired model at the position defined
-		/// </summary>
-		/// <param name="model">The model of the vehicle you wish to create</param>
-		/// <param name="position">The position you wish to create the vehicle at</param>
 		/// <param name="heading">The rotation you wish to set the vehicle at</param>
 		/// <returns name="entity">The vehicles server entity id</returns>
 #ifdef __cplusplus
-		Objects::Entity Create(const char* model, const CVector3 position, const CVector3 rotation);
+		Objects::Entity Create(const uint32_t model, const CVector3 position, const CVector3 rotation);
 #else
-		DLL_PUBLIC_I_C Objects::Entity CreateVehicle_(const char* model, const CVector3 position, const CVector3 rotation);
+		DLL_PUBLIC_I_C Objects::Entity CreateVehicle(const uint32_t model, const CVector3 position, const CVector3 rotation);
 #endif
 
 		/// <summary>
@@ -155,7 +142,7 @@ namespace API
 		/// </summary>
 		/// <param name="entity">The entity of the vehicle</param>
 		/// <returns name="model">The model</returns>
-		DLL_PUBLIC_I_C const char * GetVehicleModel(Objects::Entity entity);
+		DLL_PUBLIC_I_C const uint32_t GetVehicleModel(Objects::Entity entity);
 
 		/// <summary>
 		/// Get the vehicles number plate style

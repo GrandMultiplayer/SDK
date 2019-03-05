@@ -153,5 +153,8 @@
     <ClInclude Include="sdk\API\APIWorld.h">
       <Filter>SDK\API</Filter>
     </ClInclude>
+    <ClInclude Include="sdk\API\APIJoaat.h">
+      <Filter>SDK\API</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

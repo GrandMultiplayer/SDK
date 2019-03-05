@@ -1,7 +1,7 @@
 #ifndef __APINPC_H__
 #define __APINPC_H__
 #pragma once
-
+#include <stdint.h>
 #include <string>
 
 #include "../api.h"
@@ -9,7 +9,7 @@
 #include "../Entity.h"
 
 #ifdef __cplusplus
-	DLL_PUBLIC_I_C Objects::Entity CreateNPC(const char * model, const CVector3 position, const CVector3 rotation);
+	DLL_PUBLIC_I_C Objects::Entity CreateNPC(const uint32_t model, const CVector3 position, const CVector3 rotation);
 #endif
 
 namespace API
@@ -24,9 +24,9 @@ namespace API
 		/// <param name="heading">The heading you wish to have the npc facing</param>
 		/// <returns name="entity">The npc server entity id</returns>
 #ifdef __cplusplus
-		Objects::Entity Create(const std::string model, const CVector3 position, const CVector3 rotation);
+		Objects::Entity Create(const uint32_t model, const CVector3 position, const CVector3 rotation);
 #else
-		DLL_PUBLIC_I_C Objects::Entity CreateNPC(const char * model, const CVector3 position, const CVector3 rotation);
+		DLL_PUBLIC_I_C Objects::Entity CreateNPC(const uint32_t model, const CVector3 position, const CVector3 rotation);
 #endif
 	}
 }

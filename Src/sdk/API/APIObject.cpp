@@ -4,14 +4,9 @@ namespace API
 {
 	namespace Object
 	{
-		Objects::Entity Create(const std::string model, const CVector3 position, const CVector3 rotation, const bool dynamic)
+		Objects::Entity Create(const uint32_t model, const CVector3 position, const CVector3 rotation, const bool dynamic)
 		{
-			return CreateObject(model.c_str(), position, rotation, dynamic);
-		}
-
-		Objects::Entity Create(const int hash, const CVector3 position, const CVector3 rotation, const bool dynamic)
-		{
-			return CreateObject_(hash, position, rotation, dynamic);
+			return CreateObject(model, position, rotation, dynamic);
 		}
 	}
 }

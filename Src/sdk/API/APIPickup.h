@@ -1,7 +1,7 @@
 #ifndef __APIPICKUP_H__
 #define __APIPICKUP_H__
 #pragma once
-
+#include <stdint.h>
 #include <string>
 
 #include "../api.h"
@@ -9,11 +9,11 @@
 #include "../Entity.h"
 
 #ifdef __cplusplus
-	DLL_PUBLIC_I_C Objects::Entity CreatePickup(const CVector3 position, const char * model = "prop_beach_volball02");
+	DLL_PUBLIC_I_C Objects::Entity CreatePickup(const CVector3 position, const uint32_t model = 0xE5121369);
 	DLL_PUBLIC_I_C void ShowPickup(Objects::Entity entity, Objects::Entity playerEntity);
 	DLL_PUBLIC_I_C void HidePickup(Objects::Entity entity, Objects::Entity playerEntity);
-	DLL_PUBLIC_I_C const char * GetPickupModel(Objects::Entity entity);
-	DLL_PUBLIC_I_C void SetPickupModel(Objects::Entity entity, const char * model);
+	DLL_PUBLIC_I_C const uint32_t GetPickupModel(Objects::Entity entity);
+	DLL_PUBLIC_I_C void SetPickupModel(Objects::Entity entity, const uint32_t model);
 	DLL_PUBLIC_I_C const int GetPickupRespawnDelay(Objects::Entity entity);
 	DLL_PUBLIC_I_C void SetPickupRespawnDelay(Objects::Entity entity, const int time);
 #endif
@@ -29,9 +29,9 @@ namespace API
 		/// <param name="model">The model you want the pickup to display as.</param>
 		/// <returns name="entity">The pickups entity.</returns>
 #ifdef __cplusplus
-		Objects::Entity Create(const CVector3 position, std::string model = "prop_beach_volball02");
+		Objects::Entity Create(const CVector3 position, const uint32_t model = 0xE5121369);
 #else
-		DLL_PUBLIC_I_C Objects::Entity CreatePickup(const CVector3 position, const char * model = "prop_beach_volball02");
+		DLL_PUBLIC_I_C Objects::Entity CreatePickup(const CVector3 position, const uint32_t model = 0xE5121369);
 #endif
 
 		/// <summary>
@@ -62,9 +62,9 @@ namespace API
 		/// <param name="entity">The entity of the pickup you wish to get the model of.</param>
 		/// <returns name="model">The pickups model.</returns>
 #ifdef __cplusplus
-		std::string GetModel(Objects::Entity entity);
+		const uint32_t GetModel(Objects::Entity entity);
 #else
-		DLL_PUBLIC_I_C const char * GetPickupModel(Objects::Entity entity);
+		DLL_PUBLIC_I_C const uint32_t GetPickupModel(Objects::Entity entity);
 #endif
 
 		/// <summary>
@@ -73,9 +73,9 @@ namespace API
 		/// <param name="entity">The entity of the pickup you wish to set the model off.</param>
 		/// <param name="model">The model/prop name you wish to set the pickup too.</param>
 #ifdef __cplusplus
-		void SetModel(Objects::Entity entity, const std::string model);
+		void SetModel(Objects::Entity entity, const uint32_t model);
 #else
-		DLL_PUBLIC_I_C void SetPickupModel(Objects::Entity entity, const char * model);
+		DLL_PUBLIC_I_C void SetPickupModel(Objects::Entity entity, const uint32_t model);
 #endif
 
 		/// <summary>
